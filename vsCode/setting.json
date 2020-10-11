@@ -1,0 +1,130 @@
+{
+    "editor.fontSize": 20,
+    "debug.console.fontSize": 18,
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.rendererType": "dom",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "left",
+    "window.zoomLevel": 0,
+    "editor.columnSelection": false,
+    "rust-client.channel": "stable",
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "editor.quickSuggestionsDelay": 2,
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#ffd000f5",
+        "editorCursor.background": "#000000",
+        "syntax.string": "#a6ff00e3",
+        "syntax.scope": "#fbffc3",
+        "syntax.function": "#85e4dfe3",
+        "syntax.variable": "#fbfbfbdc",
+        "syntax.number": "#eaf5b0",
+        "syntax.comment": "#99c78b73",
+        "syntax.constant": "#f6e600",
+        "syntax.directive": "#5579df",
+        "syntax.control": "#ff8c08",
+        "syntax.operator": "#ff8c08",
+        "syntax.modifier": "#e9140d",
+        "syntax.type": "#00b7fff3",
+        "activityBarBadge.background": "#64FFDA",
+        "activityBar.activeBorder": "#64FFDA",
+        "list.activeSelectionForeground": "#64FFDA",
+        "list.inactiveSelectionForeground": "#64FFDA",
+        "list.highlightForeground": "#64FFDA",
+        "scrollbarSlider.activeBackground": "#64FFDA50",
+        "editorSuggestWidget.highlightForeground": "#64FFDA",
+        "textLink.foreground": "#64FFDA",
+        "progressBar.background": "#64FFDA",
+        "pickerGroup.foreground": "#64FFDA",
+        "tab.activeBorder": "#64FFDA",
+        "notificationLink.foreground": "#64FFDA",
+        "editorWidget.resizeBorder": "#64FFDA",
+        "editorWidget.border": "#64FFDA",
+        "settings.modifiedItemIndicator": "#64FFDA",
+        "settings.headerForeground": "#64FFDA",
+        "panelTitle.activeBorder": "#64FFDA",
+        "breadcrumb.activeSelectionForeground": "#64FFDA",
+        "menu.selectionForeground": "#64FFDA",
+        "menubar.selectionForeground": "#64FFDA",
+        "editor.findMatchBorder": "#64FFDA",
+        "selection.background": "#64FFDA40",
+        "statusBarItem.remoteBackground": "#64FFDA"
+    },
+    "bracketPairColorizer.showBracketsInGutter": true,
+    "bracketPairColorizer.highlightActiveScope": true,
+    "bracketPairColorizer.forceIterationColorCycle": true,
+    "bracketPairColorizer.consecutivePairColors": [
+
+        "()",
+        "[]",
+        "{}",
+        [   "Gold",
+            "Orchid",
+            "LightSkyBlue",
+            "Red",
+            "Cyan"
+        ],
+        "Red"
+    ],
+
+    "bracketPairColorizer.scopeLineCSS": [
+
+
+        "borderStyle : solid",
+        "borderWidth : 2px",
+        "borderColor : {color}; opacity: 0.7"
+    ],
+    "material-icon-theme.activeIconPack": "angular_ngrx",
+
+    
+    "java.semanticHighlighting.enabled": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+
+    "java.project.referencedLibraries": {
+        "include": [
+            "library/**/*.jar",
+            "/home/anthrax/stdlib.jar",
+            "/home/anthrax/algs4.jar"
+        ],
+        // "exclude": [
+        //     "library/sources/**"
+        // ],
+        // "sources": {
+        //     "library/bar.jar": "library/sources/bar-src.jar"
+        // }
+    },
+
+
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "terminal.integrated.fontFamily": "monospace",
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "\"Source Code Pro\"",
+    "editor.cursorStyle": "block",
+    "rust.all_features": true,
+    "rust-client.updateOnStartup": true,
+    "python.languageServer": "Microsoft",
+    "editor.renderControlCharacters": true,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "editor.renderWhitespace": "none",
+    "window.menuBarVisibility": "default",
+    "materialTheme.accent": "Bright Teal",
+    "workbench.colorTheme": "Default High Contrast",
+    "latex-workshop.message.update.show": false,
+    "git.autofetch": true,
+    "diffEditor.renderSideBySide": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "terminal.integrated.shell.linux": "/usr/bin/fish",
+    "haskell.hlint.executablePath": "/usr/bin/hlint"
+}
