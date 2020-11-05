@@ -27,6 +27,7 @@
         // "syntax.operator": "#ff8c08",
         // "syntax.modifier": "#e9140d",
         // "syntax.type": "#00b7fff3",
+        
         "activityBarBadge.background": "#64FFDA",
         "activityBar.activeBorder": "#64FFDA",
         "list.activeSelectionForeground": "#64FFDA",
@@ -76,8 +77,26 @@
             "operator": "#ff8c08",
             "type": "#00b7fff3",
             "type.modification": "#e9140d",
+            "enum": "#ff0000",
         }
     },
+
+    // "editor.tokenColorCustomizations": {
+    //     "strings": "#aaf15a",
+    //     // "namespace": "#fbffc3",
+    //     "functions": "#85e4dfe3",
+    //     "variables": "#fbfbfbf8",
+    //     "keywords": "#ff8c08",
+    //     "comments": {
+    //         "foreground": "#99c78b73",
+    //         "fontStyle": "italic"
+    //     },
+    //     "types": "#00b7fff3",
+    //     "numbers": {
+    //         "foreground": "#eaf5b0",
+    //         "fontStyle": "italic"
+    //     },
+    // },
     "bracketPairColorizer.showBracketsInGutter": true,
     "bracketPairColorizer.highlightActiveScope": true,
     "bracketPairColorizer.forceIterationColorCycle": true,

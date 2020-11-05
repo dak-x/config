@@ -9,12 +9,14 @@ function fish_greeting
     set_color magenta
 	echo -e (uname -n | awk '{print " \\\\e[1mHostname: \\\\e[0;32m"$0"\\\\e[0m"}')
 	echo
-    if [ (math (random)'%10') -le 3 ]
-        todo 
-    end 
-    if [ (math (random)'%10') -le 1 ]
+
+ if [ (math (random)'%100') -le 5 ]
         weather city Delhi IN
     end 
+
+
+        todo  
+   
 
 end
 
