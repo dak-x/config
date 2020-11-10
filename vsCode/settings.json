@@ -1,33 +1,82 @@
 {
-    "editor.fontSize": 20,
+    // Editor ==========> 
     "debug.console.fontSize": 18,
+    "editor.fontSize": 20,
+    "editor.columnSelection": false,
+    "editor.quickSuggestionsDelay": 1,
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "\"Source Code Pro\"",
+    "editor.cursorStyle": "block",
+    "editor.renderControlCharacters": true,
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.lineNumbers": "relative",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "rules": {
+            "string": "#aaf15a",
+            "namespace": "#fbffc3",
+            "function": "#85e4dfe3",
+            "variable": "#fbfbfbf8",
+            "number": {
+                "foreground": "#eaf5b0",
+                "italic": true
+            },
+            "comment": {
+                "foreground": "#99c78b73",
+                "italic": true,
+            },
+            "*.constant": "#f60800",
+            "macro": "#fb92d8",
+            "keyword": "#ff8c08",
+            "builtinType": "#d475f1",
+            "operator": "#ff8c08",
+            "type": "#00b7fff3",
+            "type.modification": "#e9140d",
+            "enum": "#fbff00",
+            // "syntax.string": "#a6ff00e3",
+            // "syntax.scope": "#fbffc3",
+            // "syntax.function": "#85e4dfe3",
+            // "syntax.variable": "#fbfbfbdc",
+            // "syntax.number": "#eaf5b0",
+            // "syntax.comment": "#99c78b73",
+            // "syntax.constant": "#f6e600",
+            // "syntax.directive": "#5579df",
+            // "syntax.control": "#ff8c08",
+            // "syntax.operator": "#ff8c08",
+            // "syntax.modifier": "#e9140d",
+            // "syntax.type": "#00b7fff3",
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "strings": "#aaf15a",
+        "namespace": "#fbffc3",
+        "functions": "#85e4dfe3",
+        "variables": "#fbfbfbf8",
+        "keywords": "#ff8c08",
+        "comments": {
+            "foreground": "#99c78b73",
+            "fontStyle": "italic"
+        },
+        "types": "#00b7fff3",
+        "numbers": {
+            "foreground": "#eaf5b0",
+            "fontStyle": "italic"
+        },
+    },
+    // Terminal =====>
     "terminal.integrated.fontSize": 18,
     "terminal.integrated.rendererType": "dom",
-    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.fontFamily": "\"Source Code Pro Medium\"",
+    "terminal.integrated.shell.linux": "/usr/bin/fish",
+    // WorkBench ====>
+    "workbench.colorTheme": "XD Theme",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "left",
-    "window.zoomLevel": 2,
-    "editor.columnSelection": false,
-    "C_Cpp.default.cppStandard": "c++20",
-    "C_Cpp.default.cStandard": "c11",
-    "C_Cpp.default.intelliSenseMode": "gcc-x64",
-    "editor.quickSuggestionsDelay": 1,
     "workbench.colorCustomizations": {
         "editorCursor.foreground": "#ffd000f5",
         "editorCursor.background": "#000000",
-        // "syntax.string": "#a6ff00e3",
-        // "syntax.scope": "#fbffc3",
-        // "syntax.function": "#85e4dfe3",
-        // "syntax.variable": "#fbfbfbdc",
-        // "syntax.number": "#eaf5b0",
-        // "syntax.comment": "#99c78b73",
-        // "syntax.constant": "#f6e600",
-        // "syntax.directive": "#5579df",
-        // "syntax.control": "#ff8c08",
-        // "syntax.operator": "#ff8c08",
-        // "syntax.modifier": "#e9140d",
-        // "syntax.type": "#00b7fff3",
-        
         "activityBarBadge.background": "#64FFDA",
         "activityBar.activeBorder": "#64FFDA",
         "list.activeSelectionForeground": "#64FFDA",
@@ -52,54 +101,17 @@
         "selection.background": "#64FFDA40",
         "statusBarItem.remoteBackground": "#64FFDA"
     },
-    "editor.semanticHighlighting.enabled": true,
-    "editor.semanticTokenColorCustomizations": {
-        "enabled": true,
-        "rules": {
-            "string": "#aaf15a",
-            "namespace": "#fbffc3",
-            "function": "#85e4dfe3",
-            "variable": "#fbfbfbf8",
-            "number": {
-                "foreground": "#eaf5b0",
-                "italic": true
-            },
-            "comment": {
-                "foreground": "#99c78b73",
-                "italic": true,
-            },
-            // "*.controlFlow": "#0044ff",
-            "*.constant": "#f60800",
-            //  "macro": "#587ce0",
-            "macro": "#fb92d8",
-            "keyword": "#ff8c08",
-            // "builtinType": "#d475f1",
-            "operator": "#ff8c08",
-            "type": "#00b7fff3",
-            "type.modification": "#e9140d",
-            "enum": "#fbff00",
-        }
-    },
-
-    // "editor.tokenColorCustomizations": {
-    //     "strings": "#aaf15a",
-    //     // "namespace": "#fbffc3",
-    //     "functions": "#85e4dfe3",
-    //     "variables": "#fbfbfbf8",
-    //     "keywords": "#ff8c08",
-    //     "comments": {
-    //         "foreground": "#99c78b73",
-    //         "fontStyle": "italic"
-    //     },
-    //     "types": "#00b7fff3",
-    //     "numbers": {
-    //         "foreground": "#eaf5b0",
-    //         "fontStyle": "italic"
-    //     },
-       
-    // },
-
-
+    "explorer.confirmDragAndDrop": false,
+    "window.zoomLevel": 2,
+    // Cpp ====>
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    // Rust ====>
+    "rust-client.updateOnStartup": true,
+    "rust.all_features": true,
+    "rust.racer_completion": true,
+    // Bracket Pair Colorize =>
     "bracketPairColorizer.showBracketsInGutter": true,
     "bracketPairColorizer.highlightActiveScope": true,
     "bracketPairColorizer.forceIterationColorCycle": true,
@@ -122,7 +134,10 @@
         "borderWidth : 1.5px",
         "borderColor : {color}; opacity: 0.7"
     ],
+    // Material Theme ====>
     "material-icon-theme.activeIconPack": "angular_ngrx",
+    "materialTheme.accent": "Bright Teal",
+    // Java ===>
     "java.semanticHighlighting.enabled": true,
     "files.exclude": {
         "**/.classpath": true,
@@ -143,26 +158,11 @@
         //     "library/bar.jar": "library/sources/bar-src.jar"
         // }
     },
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.jediEnabled": false,
-    "terminal.integrated.fontFamily": "\"Source Code Pro Medium\"",
-    "editor.wordWrap": "on",
-    "editor.fontFamily": "\"Source Code Pro\"",
-    "editor.cursorStyle": "block",
+    // Misc. ===>
     "python.languageServer": "Pylance",
-    "editor.renderControlCharacters": true,
-    "editor.minimap.enabled": false,
     "breadcrumbs.enabled": true,
     "window.menuBarVisibility": "default",
-    "materialTheme.accent": "Bright Teal",
-    "workbench.colorTheme": "XD Theme",
     "latex-workshop.message.update.show": false,
-    "git.autofetch": true,
-    "diffEditor.renderSideBySide": false,
-    "terminal.integrated.shell.linux": "/usr/bin/fish",
+    "diffEditor.renderSideBySide": true,
     "haskell.hlint.executablePath": "/usr/bin/hlint",
-    "rust-client.updateOnStartup": true,
-    "rust.all_features": true,
-    "rust.racer_completion": true,
 }
