@@ -70,14 +70,14 @@
             },
             // "*.controlFlow": "#0044ff",
             "*.constant": "#f60800",
-            // "macro": "#587ce0",
+            //  "macro": "#587ce0",
             "macro": "#fb92d8",
             "keyword": "#ff8c08",
             // "builtinType": "#d475f1",
             "operator": "#ff8c08",
             "type": "#00b7fff3",
             "type.modification": "#e9140d",
-            "enum": "#ff0000",
+            "enum": "#fbff00",
         }
     },
 
@@ -96,7 +96,10 @@
     //         "foreground": "#eaf5b0",
     //         "fontStyle": "italic"
     //     },
+       
     // },
+
+
     "bracketPairColorizer.showBracketsInGutter": true,
     "bracketPairColorizer.highlightActiveScope": true,
     "bracketPairColorizer.forceIterationColorCycle": true,
@@ -147,7 +150,7 @@
     "editor.wordWrap": "on",
     "editor.fontFamily": "\"Source Code Pro\"",
     "editor.cursorStyle": "block",
-    "python.languageServer": "Microsoft",
+    "python.languageServer": "Pylance",
     "editor.renderControlCharacters": true,
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": true,

@@ -15,7 +15,8 @@ function fish_greeting
     end 
 
 
-        todo  
+        todo
+	echo ""  
    
 
 end
