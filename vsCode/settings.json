@@ -1,14 +1,16 @@
 {
     // Editor ==========> 
+    "zenMode.centerLayout": true,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideTabs": false,
     "debug.console.fontSize": 18,
-    "editor.fontSize": 20,
+    "editor.fontSize": 19,
     "editor.columnSelection": false,
-    "editor.quickSuggestionsDelay": 1,
+    "editor.quickSuggestionsDelay": 0,
     "editor.wordWrap": "on",
     "editor.fontFamily": "\"Source Code Pro\"",
     "editor.cursorStyle": "block",
     "editor.renderControlCharacters": true,
-    "editor.minimap.enabled": false,
     "editor.suggestSelection": "recentlyUsedByPrefix",
     "editor.lineNumbers": "relative",
     "editor.semanticHighlighting.enabled": true,
@@ -71,10 +73,15 @@
     "terminal.integrated.fontFamily": "\"Source Code Pro Medium\"",
     "terminal.integrated.shell.linux": "/usr/bin/fish",
     // WorkBench ====>
+
     "workbench.colorTheme": "XD Theme",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "left",
     "workbench.colorCustomizations": {
+        
+        "editor.background": "#06191d",
+        // "editor.background": "#1d2021",
+        // "sideBar.background": "#091b20",
         "editorCursor.foreground": "#ffd000f5",
         "editorCursor.background": "#000000",
         "activityBarBadge.background": "#64FFDA",
@@ -160,9 +167,12 @@
     },
     // Misc. ===>
     "python.languageServer": "Pylance",
-    "breadcrumbs.enabled": true,
-    "window.menuBarVisibility": "default",
+    "breadcrumbs.enabled": false,
+    "window.menuBarVisibility": "toggle",
     "latex-workshop.message.update.show": false,
     "diffEditor.renderSideBySide": true,
     "haskell.hlint.executablePath": "/usr/bin/hlint",
+    "editor.minimap.enabled": false,
+    "editor.cursorSurroundingLines": 3,
+    "editor.mouseWheelScrollSensitivity": 2,
 }
