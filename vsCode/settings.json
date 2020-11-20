@@ -14,6 +14,7 @@
     "editor.suggestSelection": "recentlyUsedByPrefix",
     "editor.lineNumbers": "relative",
     "editor.semanticHighlighting.enabled": true,
+    "syntax.highlightComment": false,
     "editor.semanticTokenColorCustomizations": {
         "enabled": true,
         "rules": {
@@ -37,6 +38,7 @@
             "type": "#00b7fff3",
             "type.modification": "#e9140d",
             "enum": "#fbff00",
+            "templateType": "#00b7fff3"
             // "syntax.string": "#a6ff00e3",
             // "syntax.scope": "#fbffc3",
             // "syntax.function": "#85e4dfe3",
@@ -67,6 +69,7 @@
             "fontStyle": "italic"
         },
     },
+    
     // Terminal =====>
     "terminal.integrated.fontSize": 18,
     "terminal.integrated.rendererType": "dom",
@@ -168,11 +171,11 @@
     // Misc. ===>
     "python.languageServer": "Pylance",
     "breadcrumbs.enabled": false,
-    "window.menuBarVisibility": "toggle",
+    "window.menuBarVisibility": "default",
     "latex-workshop.message.update.show": false,
     "diffEditor.renderSideBySide": true,
     "haskell.hlint.executablePath": "/usr/bin/hlint",
     "editor.minimap.enabled": false,
-    "editor.cursorSurroundingLines": 3,
+    "editor.cursorSurroundingLines": 4,
     "editor.mouseWheelScrollSensitivity": 2,
 }
