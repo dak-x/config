@@ -63,11 +63,17 @@
         "command": "workbench.action.blur"
     },
     {
-        "key": "ctrl+shift+up",
-        "command": "workbench.action.terminal.resizePaneUp"
+        "key": "ctrl+shift+r",
+        "command": "-editor.action.refactor",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+shift+down",
-        "command": "workbench.action.terminal.resizePaneDown"
+        "key": "ctrl+shift+r",
+        "command": "deleteAllRight"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "-workbench.action.terminal.scrollUp",
+        "when": "terminalFocus && terminalProcessSupported"
     }
 ]

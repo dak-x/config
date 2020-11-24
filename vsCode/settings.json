@@ -82,7 +82,11 @@
     "workbench.sideBar.location": "left",
     "workbench.colorCustomizations": {
         
+        
         "editor.background": "#06191d",
+        // "terminal.border": "#06191d",
+        "panel.background": "#06191d",
+        "panel.border": "#ffd900",
         // "editor.background": "#1d2021",
         // "sideBar.background": "#091b20",
         "editorCursor.foreground": "#ffd000f5",
@@ -178,4 +182,8 @@
     "editor.minimap.enabled": false,
     "editor.cursorSurroundingLines": 4,
     "editor.mouseWheelScrollSensitivity": 2,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust"
+    },
 }
