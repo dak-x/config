@@ -10,12 +10,12 @@ function fish_greeting
 	echo -e (uname -n | awk '{print " \\\\e[1mHostname: \\\\e[0;32m"$0"\\\\e[0m"}')
 	echo
 
- if [ (math (random)'%100') -le 5 ]
-        weather city Delhi IN
-    end 
+ #if [ (math (random)'%100') -le 5 ]
+ #       weather city Delhi IN
+ #   end 
 
 
-        todo
+ #       todo
 	echo ""  
    
 
