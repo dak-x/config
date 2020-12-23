@@ -75,5 +75,9 @@
         "key": "ctrl+shift+up",
         "command": "-workbench.action.terminal.scrollUp",
         "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "shift+`",
+        "command": "workbench.action.toggleMaximizedPanel"
     }
 ]

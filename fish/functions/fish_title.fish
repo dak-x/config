@@ -1,3 +1,3 @@
 function fish_title
-	echo 'AnthraX'
+	echo 'dak-x'
 end

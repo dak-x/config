@@ -4,41 +4,58 @@
     "zenMode.hideLineNumbers": false,
     "zenMode.hideTabs": false,
     "debug.console.fontSize": 18,
-    "editor.fontSize": 19,
+    "editor.fontSize": 20,
     "editor.columnSelection": false,
-    "editor.quickSuggestionsDelay": 0,
+    "editor.quickSuggestionsDelay": 3,
     "editor.wordWrap": "on",
+    "editor.fontWeight": "370",
     "editor.fontFamily": "\"Source Code Pro\"",
     "editor.cursorStyle": "block",
     "editor.renderControlCharacters": true,
     "editor.suggestSelection": "recentlyUsedByPrefix",
     "editor.lineNumbers": "relative",
-    "editor.semanticHighlighting.enabled": true,
-    "syntax.highlightComment": false,
+    "editor.semanticHighlighting.enabled": false,
+    "syntax.highlightComment": true,
     "editor.semanticTokenColorCustomizations": {
         "enabled": true,
         "rules": {
             "string": "#aaf15a",
             "namespace": "#fbffc3",
-            "function": "#85e4dfe3",
-            "variable": "#fbfbfbf8",
+            "function": "#85e4df",
+            "variable": {
+                "foreground": "#fbfbfb",
+                "fontStyle": "",
+            },
             "number": {
                 "foreground": "#eaf5b0",
                 "italic": true
             },
             "comment": {
-                "foreground": "#99c78b73",
+                "foreground": "#f6ce77c2",
                 "italic": true,
             },
-            "*.constant": "#f60800",
+            "*.constant": "#fd4d20",
             "macro": "#fb92d8",
             "keyword": "#ff8c08",
-            "builtinType": "#d475f1",
             "operator": "#ff8c08",
             "type": "#00b7fff3",
             "type.modification": "#e9140d",
-            "enum": "#fbff00",
-            "templateType": "#00b7fff3"
+            "templateType": "#00b7fff3",
+            "method": {
+                "foreground": "#85e4df",
+                "underline": false,
+            },
+            "parameter": "#fbfbfb",
+            "property": {
+                "foreground": "#0de9dee5",
+                "underline": false,
+            },
+            "enum": "#00b7fff3",
+            "enumMember": "#ffc400",
+            "struct": "#00b7fff3",
+            "interface": "#ca74fc",
+            // "builtinType": "#d475f1",
+            // "*.modification": "#ff0000",
             // "syntax.string": "#a6ff00e3",
             // "syntax.scope": "#fbffc3",
             // "syntax.function": "#85e4dfe3",
@@ -53,67 +70,59 @@
             // "syntax.type": "#00b7fff3",
         }
     },
-    "editor.tokenColorCustomizations": {
-        "strings": "#aaf15a",
-        "namespace": "#fbffc3",
-        "functions": "#85e4dfe3",
-        "variables": "#fbfbfbf8",
-        "keywords": "#ff8c08",
-        "comments": {
-            "foreground": "#99c78b73",
-            "fontStyle": "italic"
-        },
-        "types": "#00b7fff3",
-        "numbers": {
-            "foreground": "#eaf5b0",
-            "fontStyle": "italic"
-        },
-    },
-    
+    // "editor.tokenColorCustomizations": {
+    //     "strings": "#aaf15a",
+    //     "namespace": "#fbffc3",
+    //     "functions": "#85e4dfe3",
+    //     "variables": "#fbfbfbf8",
+    //     "keywords": "#ff8c08",
+    //     "comments": {
+    //         "foreground": "#f8a232e8",
+    //         "fontStyle": "italic"
+    //     },
+    //     "types": "#00b7fff3",
+    //     "numbers": {
+    //         "foreground": "#eaf5b0",
+    //         "fontStyle": "italic"
+    //     },
+    // },
     // Terminal =====>
     "terminal.integrated.fontSize": 18,
     "terminal.integrated.rendererType": "dom",
-    "terminal.integrated.fontFamily": "\"Source Code Pro Medium\"",
+    "terminal.integrated.fontFamily": "\"Source Code Pro\"",
     "terminal.integrated.shell.linux": "/usr/bin/fish",
-    // WorkBench ====>
-
-    "workbench.colorTheme": "XD Theme",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "left",
     "workbench.colorCustomizations": {
-        
-        
         "editor.background": "#06191d",
-        // "terminal.border": "#06191d",
         "panel.background": "#06191d",
-        "panel.border": "#ffd900",
-        // "editor.background": "#1d2021",
-        // "sideBar.background": "#091b20",
+        "terminal.background": "#06191d",
+        "panel.border": "#ffe600bb",
         "editorCursor.foreground": "#ffd000f5",
         "editorCursor.background": "#000000",
-        "activityBarBadge.background": "#64FFDA",
-        "activityBar.activeBorder": "#64FFDA",
-        "list.activeSelectionForeground": "#64FFDA",
-        "list.inactiveSelectionForeground": "#64FFDA",
-        "list.highlightForeground": "#64FFDA",
-        "scrollbarSlider.activeBackground": "#64FFDA50",
-        "editorSuggestWidget.highlightForeground": "#64FFDA",
-        "textLink.foreground": "#64FFDA",
-        "progressBar.background": "#64FFDA",
-        "pickerGroup.foreground": "#64FFDA",
-        "tab.activeBorder": "#64FFDA",
-        "notificationLink.foreground": "#64FFDA",
-        "editorWidget.resizeBorder": "#64FFDA",
-        "editorWidget.border": "#64FFDA",
-        "settings.modifiedItemIndicator": "#64FFDA",
-        "settings.headerForeground": "#64FFDA",
-        "panelTitle.activeBorder": "#64FFDA",
-        "breadcrumb.activeSelectionForeground": "#64FFDA",
-        "menu.selectionForeground": "#64FFDA",
-        "menubar.selectionForeground": "#64FFDA",
-        "editor.findMatchBorder": "#f55858",
-        "selection.background": "#64FFDA40",
-        "statusBarItem.remoteBackground": "#64FFDA"
+        "activityBarBadge.background": "#FFA000",
+        "activityBar.activeBorder": "#FFA000",
+        "list.activeSelectionForeground": "#FFA000",
+        "list.inactiveSelectionForeground": "#FFA000",
+        "list.highlightForeground": "#FFA000",
+        "scrollbarSlider.activeBackground": "#FFA00050",
+        "editorSuggestWidget.highlightForeground": "#FFA000",
+        "textLink.foreground": "#FFA000",
+        "progressBar.background": "#FFA000",
+        "pickerGroup.foreground": "#FFA000",
+        "tab.activeBorder": "#FFA000",
+        "notificationLink.foreground": "#FFA000",
+        "editorWidget.resizeBorder": "#FFA000",
+        "editorWidget.border": "#FFA000",
+        "settings.modifiedItemIndicator": "#FFA000",
+        "settings.headerForeground": "#FFA000",
+        "panelTitle.activeBorder": "#FFA000",
+        "breadcrumb.activeSelectionForeground": "#FFA000",
+        "menu.selectionForeground": "#FFA000",
+        "menubar.selectionForeground": "#FFA000",
+        "editor.findMatchBorder": "#FFA000",
+        "selection.background": "#FFA00040",
+        "statusBarItem.remoteBackground": "#FFA000"
     },
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 2,
@@ -150,7 +159,7 @@
     ],
     // Material Theme ====>
     "material-icon-theme.activeIconPack": "angular_ngrx",
-    "materialTheme.accent": "Bright Teal",
+    "materialTheme.accent": "Yellow",
     // Java ===>
     "java.semanticHighlighting.enabled": true,
     "files.exclude": {
@@ -183,9 +192,19 @@
     "editor.cursorSurroundingLines": 4,
     "editor.mouseWheelScrollSensitivity": 2,
     "diffEditor.ignoreTrimWhitespace": false,
-    "[rust]": {
-        "editor.defaultFormatter": "rust-lang.rust"
+    "C_Cpp.autocomplete": "Default",
+    "tabnine.experimentalAutoImports": true,
+    "workbench.colorTheme": "Gruvbox Dark Soft",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": false
     },
-    "workbench.statusBar.visible": true,
-
+    "editor.wordBasedSuggestionsMode": "allDocuments",
+    "rust-analyzer.procMacro.enable": true,
+    "editor.snippetSuggestions": "bottom",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.suggest.showWords": false,
 }

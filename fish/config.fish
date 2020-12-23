@@ -6,6 +6,7 @@ if status --is-interactive
 	# tmux ^ /dev/null; and exec true
 end
 
+# set -U RUSTC_WRAPPER /home/dak-x/.cargo/bin/sccache
 
 
 # colored man output
