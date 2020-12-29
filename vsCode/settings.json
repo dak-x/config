@@ -5,6 +5,7 @@
     "zenMode.hideTabs": false,
     "debug.console.fontSize": 18,
     "editor.fontSize": 20,
+    "editor.fontLigatures":true,
     "editor.columnSelection": false,
     "editor.quickSuggestionsDelay": 3,
     "editor.wordWrap": "on",
