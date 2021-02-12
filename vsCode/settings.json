@@ -5,88 +5,22 @@
     "zenMode.hideTabs": false,
     "debug.console.fontSize": 18,
     "editor.fontSize": 20,
-    "editor.fontLigatures":true,
+    "editor.fontLigatures": true,
     "editor.columnSelection": false,
     "editor.quickSuggestionsDelay": 3,
     "editor.wordWrap": "on",
-    "editor.fontWeight": "370",
-    "editor.fontFamily": "\"Source Code Pro\"",
+    "editor.fontWeight": "400",
+    "editor.fontFamily": "\"Hasklig\"",
     "editor.cursorStyle": "block",
     "editor.renderControlCharacters": true,
     "editor.suggestSelection": "recentlyUsedByPrefix",
     "editor.lineNumbers": "relative",
-    "editor.semanticHighlighting.enabled": false,
-    "syntax.highlightComment": true,
-    "editor.semanticTokenColorCustomizations": {
-        "enabled": true,
-        "rules": {
-            "string": "#aaf15a",
-            "namespace": "#fbffc3",
-            "function": "#85e4df",
-            "variable": {
-                "foreground": "#fbfbfb",
-                "fontStyle": "",
-            },
-            "number": {
-                "foreground": "#eaf5b0",
-                "italic": true
-            },
-            "comment": {
-                "foreground": "#f6ce77c2",
-                "italic": true,
-            },
-            "*.constant": "#fd4d20",
-            "macro": "#fb92d8",
-            "keyword": "#ff8c08",
-            "operator": "#ff8c08",
-            "type": "#00b7fff3",
-            "type.modification": "#e9140d",
-            "templateType": "#00b7fff3",
-            "method": {
-                "foreground": "#85e4df",
-                "underline": false,
-            },
-            "parameter": "#fbfbfb",
-            "property": {
-                "foreground": "#0de9dee5",
-                "underline": false,
-            },
-            "enum": "#00b7fff3",
-            "enumMember": "#ffc400",
-            "struct": "#00b7fff3",
-            "interface": "#ca74fc",
-            // "builtinType": "#d475f1",
-            // "*.modification": "#ff0000",
-            // "syntax.string": "#a6ff00e3",
-            // "syntax.scope": "#fbffc3",
-            // "syntax.function": "#85e4dfe3",
-            // "syntax.variable": "#fbfbfbdc",
-            // "syntax.number": "#eaf5b0",
-            // "syntax.comment": "#99c78b73",
-            // "syntax.constant": "#f6e600",
-            // "syntax.directive": "#5579df",
-            // "syntax.control": "#ff8c08",
-            // "syntax.operator": "#ff8c08",
-            // "syntax.modifier": "#e9140d",
-            // "syntax.type": "#00b7fff3",
-        }
+    "editor.tokenColorCustomizations": {
+        "comments": {
+            "foreground": "#f8a232b6",
+            "fontStyle": "italic",
+        },
     },
-    // "editor.tokenColorCustomizations": {
-    //     "strings": "#aaf15a",
-    //     "namespace": "#fbffc3",
-    //     "functions": "#85e4dfe3",
-    //     "variables": "#fbfbfbf8",
-    //     "keywords": "#ff8c08",
-    //     "comments": {
-    //         "foreground": "#f8a232e8",
-    //         "fontStyle": "italic"
-    //     },
-    //     "types": "#00b7fff3",
-    //     "numbers": {
-    //         "foreground": "#eaf5b0",
-    //         "fontStyle": "italic"
-    //     },
-    // },
     // Terminal =====>
     "terminal.integrated.fontSize": 18,
     "terminal.integrated.rendererType": "dom",
@@ -131,10 +65,6 @@
     "C_Cpp.default.cppStandard": "c++20",
     "C_Cpp.default.cStandard": "c11",
     "C_Cpp.default.intelliSenseMode": "gcc-x64",
-    // Rust ====>
-    "rust-client.updateOnStartup": true,
-    "rust.all_features": true,
-    "rust.racer_completion": true,
     // Bracket Pair Colorize =>
     "bracketPairColorizer.showBracketsInGutter": true,
     "bracketPairColorizer.highlightActiveScope": true,
@@ -158,9 +88,6 @@
         "borderWidth : 1.5px",
         "borderColor : {color}; opacity: 0.7"
     ],
-    // Material Theme ====>
-    "material-icon-theme.activeIconPack": "angular_ngrx",
-    "materialTheme.accent": "Yellow",
     // Java ===>
     "java.semanticHighlighting.enabled": true,
     "files.exclude": {
@@ -185,14 +112,12 @@
     // Misc. ===>
     "python.languageServer": "Pylance",
     "breadcrumbs.enabled": false,
-    "window.menuBarVisibility": "toggle",
-    "latex-workshop.message.update.show": false,
+    "window.menuBarVisibility": "default",
     "diffEditor.renderSideBySide": true,
     "haskell.hlint.executablePath": "/usr/bin/hlint",
     "editor.minimap.enabled": false,
     "editor.cursorSurroundingLines": 4,
     "editor.mouseWheelScrollSensitivity": 2,
-    "diffEditor.ignoreTrimWhitespace": false,
     "C_Cpp.autocomplete": "Default",
     "tabnine.experimentalAutoImports": true,
     "workbench.colorTheme": "Gruvbox Dark Soft",
@@ -205,7 +130,15 @@
     "rust-analyzer.procMacro.enable": true,
     "editor.snippetSuggestions": "bottom",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.tabCompletion": "onlySnippets",
-    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.acceptSuggestionOnEnter": "off",
     "editor.suggest.showWords": false,
+    "editor.multiCursorModifier": "alt",
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.visible": true,
+    //Rust
+    "rust-analyzer.inlayHints.typeHints": false,
+    "editor.renderWhitespace": "none",
+    //GO
+    "go.installDependenciesWhenBuilding": true,
+    "go.formatTool": "gofmt",
 }

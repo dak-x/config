@@ -87,5 +87,10 @@
     {
         "key": "ctrl+n",
         "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-workbench.action.toggleDevTools",
+        "when": "isDevelopment"
     }
 ]
