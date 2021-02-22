@@ -27,7 +27,7 @@
     "terminal.integrated.fontFamily": "\"Source Code Pro\"",
     "terminal.integrated.shell.linux": "/usr/bin/fish",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "left",
+    "workbench.sideBar.location": "right",
     "workbench.colorCustomizations": {
         "editor.background": "#06191d",
         "panel.background": "#06191d",
@@ -60,11 +60,6 @@
         "statusBarItem.remoteBackground": "#FFA000"
     },
     "explorer.confirmDragAndDrop": false,
-    "window.zoomLevel": 2,
-    // Cpp ====>
-    "C_Cpp.default.cppStandard": "c++20",
-    "C_Cpp.default.cStandard": "c11",
-    "C_Cpp.default.intelliSenseMode": "gcc-x64",
     // Bracket Pair Colorize =>
     "bracketPairColorizer.showBracketsInGutter": true,
     "bracketPairColorizer.highlightActiveScope": true,
@@ -112,7 +107,7 @@
     // Misc. ===>
     "python.languageServer": "Pylance",
     "breadcrumbs.enabled": false,
-    "window.menuBarVisibility": "default",
+    "window.menuBarVisibility": "toggle",
     "diffEditor.renderSideBySide": true,
     "haskell.hlint.executablePath": "/usr/bin/hlint",
     "editor.minimap.enabled": false,
@@ -133,7 +128,6 @@
     "editor.acceptSuggestionOnEnter": "off",
     "editor.suggest.showWords": false,
     "editor.multiCursorModifier": "alt",
-    "workbench.statusBar.visible": false,
     "workbench.activityBar.visible": true,
     //Rust
     "rust-analyzer.inlayHints.typeHints": false,
@@ -141,4 +135,13 @@
     //GO
     "go.installDependenciesWhenBuilding": true,
     "go.formatTool": "gofmt",
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "editor.insertSpaces": false,
+    "workbench.statusBar.visible": false,
+    "window.zoomLevel": 2,
 }
