@@ -17,7 +17,7 @@
     "editor.lineNumbers": "relative",
     "editor.tokenColorCustomizations": {
         "comments": {
-            "foreground": "#f8a232b6",
+            "foreground": "#f8a232ad",
             "fontStyle": "italic",
         },
     },

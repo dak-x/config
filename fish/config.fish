@@ -1,11 +1,3 @@
-if status --is-interactive
-	if test -d ~/dev/others/base16/templates/fish-shell
-		set fish_function_path $fish_function_path ~/dev/others/base16/templates/fish-shell/functions
-		builtin source ~/dev/others/base16/templates/fish-shell/conf.d/base16.fish
-	end
-	# tmux ^ /dev/null; and exec true
-end
-
 # set -U RUSTC_WRAPPER /home/dak-x/.cargo/bin/sccache
 
 
@@ -20,3 +12,6 @@ setenv LESS_TERMCAP_ue \e'[0m'           # end underline
 setenv LESS_TERMCAP_us \e'[04;38;5;146m' # begin underline
 
 source /usr/share/autojump/autojump.fish
+
+# colored bat output
+setenv BAT_THEME "gruvbox"
