@@ -114,8 +114,8 @@
     "editor.cursorSurroundingLines": 4,
     "editor.mouseWheelScrollSensitivity": 2,
     "C_Cpp.autocomplete": "Default",
-    "tabnine.experimentalAutoImports": true,
-    "workbench.colorTheme": "Gruvbox Dark Soft",
+    "tabnine.experimentalAutoImports": false,
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "editor.quickSuggestions": {
         "other": true,
         "comments": true,
@@ -143,5 +143,6 @@
     },
     "editor.insertSpaces": false,
     "workbench.statusBar.visible": false,
-    "window.zoomLevel": 2,
+    "clang-format.executable": "/usr/bin/clang-format-10",
+    "window.zoomLevel": 1
 }

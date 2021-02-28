@@ -60,12 +60,12 @@ myModMask       = mod4Mask
 --
 -- > workspaces = ["web", "irc", "code" ] ++ map show [4..9]
 --
-myWorkspaces    = ["web","code","zoom","A","B","C","X","Y","Z"]
+myWorkspaces    = ["web","code","irc","A","B","C","X","Y","Z"]
 
 -- Border colors for unfocused and focused windows, respectively.
 --
-myNormalBorderColor  = "#dddddd"
-myFocusedBorderColor = "#00aaff"
+myNormalBorderColor  = "#ccdddd"
+myFocusedBorderColor = "#00bbff"
 
 ------------------------------------------------------------------------
 -- Key bindings. Add, modify or remove key bindings here.
@@ -191,7 +191,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 -- The available layouts.  Note that each layout is separated by |||,
 -- which denotes layout choice.
 --
-myLayout = avoidStruts (smartSpacing 10 $  tiled ||| Mirror tiled ||| Full)
+myLayout = avoidStruts (spacing 10 $  tiled ||| Mirror tiled ||| Full)
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
@@ -256,6 +256,9 @@ myLogHook = return ()
 --
 -- By default, do nothing.
 myStartupHook = do
+        spawn "/usr/lib/gnome-settings-daemon/gsd-xsettings &"
+        spawn "nm-applet"       -- Set Wifi tray icon
+        spawn "blueman-applet"  -- Set BlueTooth tray icon
         spawn "~/.config/polybar/launch.sh --blocks"
         spawn "setxkbmap -layout us -option ctrl:nocaps"  -- Set capslock to ctrl
         spawn "nitrogen --restore &"
@@ -266,7 +269,7 @@ myStartupHook = do
 
 -- Run xmonad with the settings you specify. No need to modify this.
 
-main = xmonad $ ewmh $ docks $ FS.fullscreenSupport  defaults 
+main = xmonad $ FS.fullscreenSupport $ ewmh $ docks   defaults 
 
 -- A structure containing your configuration settings, overriding
 -- fields in the default config. Any you don't override, will
@@ -279,7 +282,7 @@ defaults = def {
         terminal           = myTerminal,
         focusFollowsMouse  = myFocusFollowsMouse,
         clickJustFocuses   = myClickJustFocuses,
-        borderWidth        = 0,
+        borderWidth        = 1,
         modMask            = myModMask,
         workspaces         = myWorkspaces,
         normalBorderColor  = myNormalBorderColor,
@@ -291,9 +294,9 @@ defaults = def {
 
       -- hooks, layouts
         layoutHook         = myLayout,
-        manageHook         = manageDocks <+> myManageHook ,
+        manageHook         = myManageHook ,
         handleEventHook    = myEventHook,
-        logHook            = myLogHook <+> ewmhDesktopsLogHook,
+        logHook            = myLogHook <+> ewmhDesktopsLogHook <+> dynamicLog,
         startupHook        = myStartupHook 
     }
 
