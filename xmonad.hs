@@ -65,7 +65,7 @@ myWorkspaces    = ["web","code","irc","A","B","C","X","Y","Z"]
 -- Border colors for unfocused and focused windows, respectively.
 --
 myNormalBorderColor  = "#ccdddd"
-myFocusedBorderColor = "#00bbff"
+myFocusedBorderColor = "#fcc100"
 
 ------------------------------------------------------------------------
 -- Key bindings. Add, modify or remove key bindings here.
@@ -191,7 +191,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 -- The available layouts.  Note that each layout is separated by |||,
 -- which denotes layout choice.
 --
-myLayout = avoidStruts (spacing 10 $  tiled ||| Mirror tiled ||| Full)
+myLayout = avoidStruts (spacing 5 $  tiled ||| Mirror tiled ||| Full)
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio

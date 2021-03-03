@@ -4,7 +4,7 @@
     "zenMode.hideLineNumbers": false,
     "zenMode.hideTabs": false,
     "debug.console.fontSize": 18,
-    "editor.fontSize": 20,
+    "editor.fontSize": 18,
     "editor.fontLigatures": true,
     "editor.columnSelection": false,
     "editor.quickSuggestionsDelay": 3,
@@ -144,5 +144,5 @@
     "editor.insertSpaces": false,
     "workbench.statusBar.visible": false,
     "clang-format.executable": "/usr/bin/clang-format-10",
-    "window.zoomLevel": 1
+    "window.zoomLevel": 2
 }
