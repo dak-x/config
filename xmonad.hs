@@ -225,6 +225,11 @@ myManageHook = composeAll
     , className =? "Gimp"           --> doFloat
     , resource  =? "desktop_window" --> doIgnore
     , resource  =? "kdesktop"       --> doIgnore
+    , className  =? "Firefox"       --> doShift "web"
+    , className  =? "Code"          --> doShift "code"
+    , className  =? "discord"       --> doShift "irc"
+    , appName   =? "zoom"           --> doShift "A" <+> doFloat
+    , appName  =? "mailspring"      --> doShift "C"
     -- , fmap (isInfixOf "display") appCommand --> doFloat
     -- , fmap(isInfixOf "feh") appCommand --> doFloat 
     ]
@@ -256,6 +261,7 @@ myLogHook = return ()
 --
 -- By default, do nothing.
 myStartupHook = do
+        spawn "redshift -O 4500"
         spawn "/usr/lib/gnome-settings-daemon/gsd-xsettings &"
         spawn "nm-applet"       -- Set Wifi tray icon
         spawn "blueman-applet"  -- Set BlueTooth tray icon

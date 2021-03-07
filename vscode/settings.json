@@ -142,7 +142,6 @@
         "editor.defaultFormatter": "xaver.clang-format"
     },
     "editor.insertSpaces": false,
-    "workbench.statusBar.visible": false,
     "clang-format.executable": "/usr/bin/clang-format-10",
     "window.zoomLevel": 2
 }
