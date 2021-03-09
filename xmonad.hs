@@ -261,7 +261,7 @@ myLogHook = return ()
 --
 -- By default, do nothing.
 myStartupHook = do
-        spawn "redshift -O 4500"
+        spawn "redshift -O 3500"
         spawn "/usr/lib/gnome-settings-daemon/gsd-xsettings &"
         spawn "nm-applet"       -- Set Wifi tray icon
         spawn "blueman-applet"  -- Set BlueTooth tray icon

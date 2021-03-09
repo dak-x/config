@@ -18,6 +18,7 @@
     "editor.tokenColorCustomizations": {
         "comments": {
             "foreground": "#f8a232ad",
+            // "foreground": "#f5f832ad",
             "fontStyle": "italic",
         },
     },
@@ -143,5 +144,6 @@
     },
     "editor.insertSpaces": false,
     "clang-format.executable": "/usr/bin/clang-format-10",
-    "window.zoomLevel": 2
+    "window.zoomLevel": 2,
+    "workbench.statusBar.visible": false
 }
