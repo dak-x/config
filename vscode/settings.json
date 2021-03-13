@@ -144,6 +144,6 @@
     },
     "editor.insertSpaces": false,
     "clang-format.executable": "/usr/bin/clang-format-10",
-    "window.zoomLevel": 2,
-    "workbench.statusBar.visible": false
+    "clang-format.language.cpp.style": "WebKit",
+    "window.zoomLevel": 2
 }
