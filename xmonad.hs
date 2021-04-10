@@ -137,7 +137,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((0, xF86XK_AudioMute), (spawn "pactl set-sink-mute @DEFAULT_SINK@ toggle &"))
 
     -- Brightness Controls
-    , ((0, xF86XK_MonBrightnessDown), (spawn "brightness.sh - &"))
+    , ((0, xF86XK_MonBrightnessDown), (spawn "/usr/local/bin/brightness.sh - &"))
     , ((0, xF86XK_MonBrightnessUp), (spawn "/usr/local/bin/brightness.sh + &"))
 
     ]

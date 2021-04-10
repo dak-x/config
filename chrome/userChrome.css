@@ -29,8 +29,8 @@
 	.tab-background { border-top: none !important; }
 	#navigator-toolbox::after { border: none; }
 	#TabsToolbar .tabbrowser-arrowscrollbox,
-	#tabbrowser-tabs, .tab-stack { min-height: 28px !important; }
-	.tabbrowser-tab { font-size: 120%;}
+	#tabbrowser-tabs, .tab-stack { min-height: 40px !important; }
+	.tabbrowser-tab { font-size: 120%; min-height: 40px}
 	.tab-content { padding: 0 5px; }
 	.tab-close-button .toolbarbutton-icon { width: 12px !important; height: 12px !important; }
 }

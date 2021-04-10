@@ -4,7 +4,7 @@
     "zenMode.hideLineNumbers": false,
     "zenMode.hideTabs": false,
     "debug.console.fontSize": 18,
-    "editor.fontSize": 18,
+    "editor.fontSize": 17,
     "editor.fontLigatures": true,
     "editor.columnSelection": false,
     "editor.quickSuggestionsDelay": 3,
@@ -17,7 +17,7 @@
     "editor.lineNumbers": "relative",
     "editor.tokenColorCustomizations": {
         "comments": {
-            "foreground": "#f8a232ad",
+            "foreground": "#f88e04c0",
             // "foreground": "#f5f832ad",
             "fontStyle": "italic",
         },
@@ -58,7 +58,9 @@
         "menubar.selectionForeground": "#FFA000",
         "editor.findMatchBorder": "#FFA000",
         "selection.background": "#FFA00040",
-        "statusBarItem.remoteBackground": "#FFA000"
+        "statusBarItem.remoteBackground": "#FFA000",
+        "editor.lineHighlightBackground": "#0a282e00",
+        "editor.lineHighlightBorder": "#17546611"
     },
     "explorer.confirmDragAndDrop": false,
     // Bracket Pair Colorize =>
@@ -135,15 +137,30 @@
     "editor.renderWhitespace": "none",
     //GO
     "go.installDependenciesWhenBuilding": true,
-    "go.formatTool": "gofmt",
+    "go.formatTool": "default",
+    "go.toolsManagement.autoUpdate": true,
+    // Clang format
     "[c]": {
         "editor.defaultFormatter": "xaver.clang-format"
     },
     "[cpp]": {
         "editor.defaultFormatter": "xaver.clang-format"
     },
-    "editor.insertSpaces": false,
+    "C_Cpp.default.includePath": [
+        "/usr/lib/gcc/x86_64-linux-gnu/7/include/",
+    ],
     "clang-format.executable": "/usr/bin/clang-format-10",
     "clang-format.language.cpp.style": "WebKit",
-    "window.zoomLevel": 2
+    "clang-format.language.c.style": "WebKit",
+    "editor.detectIndentation": false,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.largeFileOptimizations": false,
+    "window.zoomLevel": 3,
+    "explorer.confirmDelete": false
 }
