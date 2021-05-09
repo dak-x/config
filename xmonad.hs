@@ -1,13 +1,3 @@
---
--- xmonad example config file.
---
--- A template showing all available configuration hooks,
--- and how to override the defaults in your own xmonad.hs conf file.
---
--- Normally, you'd only override those defaults you care about.
---
-
-
 import Control.Monad
 import System.IO
 
@@ -16,6 +6,7 @@ import Data.Monoid
 import Data.List
 
 import XMonad.Config.Desktop
+import XMonad.Actions.DynamicWorkspaces
 
 
 import XMonad.Hooks.ManageDocks
@@ -23,7 +14,6 @@ import XMonad.Hooks.ManageHelpers
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.EwmhDesktops 
 import XMonad.Hooks.Place
-
 
 import XMonad.Layout.Spacing
 import qualified XMonad.Layout.Fullscreen as FS
@@ -36,9 +26,7 @@ import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 import Graphics.X11.ExtraTypes.XF86
 
--- The preferred terminal program, which is used in a binding below and by
--- certain contrib modules.
---
+
 myTerminal      = "alacritty"
 
 -- Whether focus follows the mouse pointer.
@@ -51,16 +39,10 @@ myClickJustFocuses = False
 
 myModMask       = mod4Mask
 
--- The default number of workspaces (virtual screens) and their names.
--- By default we use numeric strings, but any string may be used as a
--- workspace name. The number of workspaces is determined by the length
--- of this list.
---
--- A tagging example:
---
+
 -- > workspaces = ["web", "irc", "code" ] ++ map show [4..9]
 --
-myWorkspaces    = ["web","code","irc","A","B","C","X","Y","Z"]
+myWorkspaces    = ["web","kod","irc","a","b","c"]
 
 -- Border colors for unfocused and focused windows, respectively.
 --
@@ -79,6 +61,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_space ), sendMessage NextLayout)
     , ((modm .|. shiftMask, xK_space ), setLayout $ XMonad.layoutHook conf)
     , ((modm,               xK_n     ), refresh)
+
+    -- , ((modm .|. shiftMask, xK_BackSpace), removeWorkspace)
 
     -- Move focus to the next window
     , ((modm,               xK_Tab   ), windows W.focusDown)
@@ -148,7 +132,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- mod-shift-[1..9], Move client to workspace N
     --
     [((m .|. modm, k), windows $ f i)
-        | (i, k) <- zip (XMonad.workspaces conf) [xK_1 .. xK_9]
+        | (i, k) <- zip (XMonad.workspaces conf) [xK_1 .. xK_6]
         , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
     ++
 
@@ -191,7 +175,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 -- The available layouts.  Note that each layout is separated by |||,
 -- which denotes layout choice.
 --
-myLayout = avoidStruts (spacing 8 $  tiled ||| Mirror tiled ||| Full)
+myLayout = avoidStruts (spacing 5 $  tiled ||| Mirror tiled ||| Full)
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
@@ -226,10 +210,10 @@ myManageHook = composeAll
     , resource  =? "desktop_window" --> doIgnore
     , resource  =? "kdesktop"       --> doIgnore
     , className  =? "Firefox"       --> doShift "web"
-    , className  =? "Code"          --> doShift "code"
+    , className  =? "Code"          --> doShift "kod"
     , className  =? "discord"       --> doShift "irc"
-    , appName   =? "zoom"           --> doShift "A" <+> doFloat
-    , appName  =? "mailspring"      --> doShift "C"
+    , appName   =? "zoom"           --> doShift "a" <+> doFloat
+    , appName  =? "mailspring"      --> doShift "c"
     -- , fmap (isInfixOf "display") appCommand --> doFloat
     -- , fmap(isInfixOf "feh") appCommand --> doFloat 
     ]
@@ -261,7 +245,7 @@ myLogHook = return ()
 --
 -- By default, do nothing.
 myStartupHook = do
-        spawn "redshift -O 3500"
+        spawn "redshift -O 4500"
         spawn "/usr/lib/gnome-settings-daemon/gsd-xsettings &"
         spawn "nm-applet"       -- Set Wifi tray icon
         spawn "blueman-applet"  -- Set BlueTooth tray icon

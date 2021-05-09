@@ -131,7 +131,6 @@
     "editor.acceptSuggestionOnEnter": "off",
     "editor.suggest.showWords": false,
     "editor.multiCursorModifier": "alt",
-    "workbench.activityBar.visible": true,
     //Rust
     "rust-analyzer.inlayHints.typeHints": false,
     "editor.renderWhitespace": "none",
@@ -160,7 +159,7 @@
         }
     ],
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.largeFileOptimizations": false,
-    "window.zoomLevel": 3,
-    "explorer.confirmDelete": false
+    "editor.largeFileOptimizations": true,
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 2,
 }
