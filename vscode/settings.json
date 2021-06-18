@@ -4,29 +4,27 @@
     "zenMode.hideLineNumbers": false,
     "zenMode.hideTabs": false,
     "debug.console.fontSize": 18,
-    "editor.fontSize": 17,
+    "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "editor.columnSelection": false,
     "editor.quickSuggestionsDelay": 3,
     "editor.wordWrap": "on",
-    "editor.fontWeight": "400",
-    "editor.fontFamily": "\"Hasklig\"",
+    "editor.fontWeight": "normal",
+    "editor.fontFamily": "\"Noto Sans Mono\"",
     "editor.cursorStyle": "block",
     "editor.renderControlCharacters": true,
     "editor.suggestSelection": "recentlyUsedByPrefix",
     "editor.lineNumbers": "relative",
     "editor.tokenColorCustomizations": {
         "comments": {
-            "foreground": "#f88e04c0",
+            "foreground": "#fa9d24b9",
+            "fontStyle":""
             // "foreground": "#f5f832ad",
-            "fontStyle": "italic",
         },
     },
     // Terminal =====>
     "terminal.integrated.fontSize": 18,
-    "terminal.integrated.rendererType": "dom",
     "terminal.integrated.fontFamily": "\"Source Code Pro\"",
-    "terminal.integrated.shell.linux": "/usr/bin/fish",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
     "workbench.colorCustomizations": {
@@ -118,7 +116,6 @@
     "editor.mouseWheelScrollSensitivity": 2,
     "C_Cpp.autocomplete": "Default",
     "tabnine.experimentalAutoImports": false,
-    "workbench.colorTheme": "Gruvbox Dark Hard",
     "editor.quickSuggestions": {
         "other": true,
         "comments": true,
@@ -152,14 +149,15 @@
     "clang-format.language.cpp.style": "WebKit",
     "clang-format.language.c.style": "WebKit",
     "editor.detectIndentation": false,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.largeFileOptimizations": true,
     "explorer.confirmDelete": false,
-    "window.zoomLevel": 2,
+    "tremor-query.trace.server": "messages",
+    "tremor-script.trace.server": "messages",
+    "tremor.languageServerExecutable": "~/.cargo/bin/tremor-language-server",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "window.zoomLevel": 1,
 }

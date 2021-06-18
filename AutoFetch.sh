@@ -7,7 +7,7 @@ cp -r ~/.config/fish ./
 cp ~/.config/Code/User/settings.json ./vscode/settings.json
 cp ~/.config/Code/User/keybindings.json ./vscode/keybindings.json
 
-cp -r ~/.config/polybar/blocks ./polybar/
+cp -r ~/.config/polybar/colorblocks ./polybar/
 
 cp ~/.xmonad/xmonad.hs ./
 

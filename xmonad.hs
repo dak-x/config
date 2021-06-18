@@ -42,11 +42,12 @@ myModMask       = mod4Mask
 
 -- > workspaces = ["web", "irc", "code" ] ++ map show [4..9]
 --
-myWorkspaces    = ["web","kod","irc","a","b","c"]
+myWorkspaces    = ["web","irc","kod","a","b","c"]
 
 -- Border colors for unfocused and focused windows, respectively.
 --
 myNormalBorderColor  = "#ccdddd"
+-- myFocusedBorderColor = "#00f9ff"
 myFocusedBorderColor = "#fcc100"
 
 ------------------------------------------------------------------------
@@ -212,7 +213,7 @@ myManageHook = composeAll
     , className  =? "Firefox"       --> doShift "web"
     , className  =? "Code"          --> doShift "kod"
     , className  =? "discord"       --> doShift "irc"
-    , appName   =? "zoom"           --> doShift "a" <+> doFloat
+    , appName   =? "zoom"           --> doShift "c" <+> doFloat
     , appName  =? "mailspring"      --> doShift "c"
     -- , fmap (isInfixOf "display") appCommand --> doFloat
     -- , fmap(isInfixOf "feh") appCommand --> doFloat 
@@ -245,7 +246,7 @@ myLogHook = return ()
 --
 -- By default, do nothing.
 myStartupHook = do
-        spawn "redshift -O 4500"
+        spawn "redshift -O 4000"
         spawn "/usr/lib/gnome-settings-daemon/gsd-xsettings &"
         spawn "nm-applet"       -- Set Wifi tray icon
         spawn "blueman-applet"  -- Set BlueTooth tray icon
@@ -272,7 +273,7 @@ defaults = def {
         terminal           = myTerminal,
         focusFollowsMouse  = myFocusFollowsMouse,
         clickJustFocuses   = myClickJustFocuses,
-        borderWidth        = 1,
+        borderWidth        = 0,
         modMask            = myModMask,
         workspaces         = myWorkspaces,
         normalBorderColor  = myNormalBorderColor,
