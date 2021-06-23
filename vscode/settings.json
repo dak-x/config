@@ -18,7 +18,7 @@
     "editor.tokenColorCustomizations": {
         "comments": {
             "foreground": "#fa9d24b9",
-            "fontStyle":""
+            "fontStyle": ""
             // "foreground": "#f5f832ad",
         },
     },
@@ -28,10 +28,14 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
     "workbench.colorCustomizations": {
-        "editor.background": "#06191d",
-        "panel.background": "#06191d",
-        "terminal.background": "#06191d",
-        "panel.border": "#ffe600bb",
+        // "editor.background": "#06191d",
+        // "panel.background": "#06191d",
+        // "terminal.background": "#06191d",
+        "editor.background": "#010e13",
+        "panel.background": "#010e13",
+        "terminal.background": "#010e13",
+        
+        "panel.border": "#91ff00ad",
         "editorCursor.foreground": "#ffd000f5",
         "editorCursor.background": "#000000",
         "activityBarBadge.background": "#FFA000",
@@ -135,6 +139,7 @@
     "go.installDependenciesWhenBuilding": true,
     "go.formatTool": "default",
     "go.toolsManagement.autoUpdate": true,
+    "go.useCodeSnippetsOnFunctionSuggest": true,
     // Clang format
     "[c]": {
         "editor.defaultFormatter": "xaver.clang-format"
@@ -159,5 +164,7 @@
     "tremor-script.trace.server": "messages",
     "tremor.languageServerExecutable": "~/.cargo/bin/tremor-language-server",
     "workbench.colorTheme": "Gruvbox Dark Hard",
+    "redhat.telemetry.enabled": false,
+    "workbench.startupEditor": "none",
     "window.zoomLevel": 1,
 }
