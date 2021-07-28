@@ -134,6 +134,7 @@
     "editor.multiCursorModifier": "alt",
     //Rust
     "rust-analyzer.inlayHints.typeHints": false,
+    "rust-analyzer.cargo.runBuildScripts": true,
     "editor.renderWhitespace": "none",
     //GO
     "go.installDependenciesWhenBuilding": true,
@@ -153,9 +154,9 @@
     "clang-format.executable": "/usr/bin/clang-format-10",
     "clang-format.language.cpp.style": "WebKit",
     "clang-format.language.c.style": "WebKit",
-    "editor.detectIndentation": false,
+    "editor.detectIndentation": true,
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.largeFileOptimizations": true,
@@ -165,6 +166,11 @@
     "tremor.languageServerExecutable": "~/.cargo/bin/tremor-language-server",
     "workbench.colorTheme": "Gruvbox Dark Hard",
     "redhat.telemetry.enabled": false,
-    "workbench.startupEditor": "none",
-    "window.zoomLevel": 1,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
 }

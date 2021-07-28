@@ -15,6 +15,7 @@ import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.EwmhDesktops 
 import XMonad.Hooks.Place
 
+import XMonad.Layout.Grid (Grid(..))
 import XMonad.Layout.Spacing
 import qualified XMonad.Layout.Fullscreen as FS
 import XMonad.Util.SpawnOnce
@@ -176,7 +177,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 -- The available layouts.  Note that each layout is separated by |||,
 -- which denotes layout choice.
 --
-myLayout = avoidStruts (spacing 5 $  tiled ||| Mirror tiled ||| Full)
+myLayout = avoidStruts (spacing 5 $  tiled ||| Grid ||| Full )
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
@@ -246,7 +247,6 @@ myLogHook = return ()
 --
 -- By default, do nothing.
 myStartupHook = do
-        spawn "redshift -O 4000"
         spawn "/usr/lib/gnome-settings-daemon/gsd-xsettings &"
         spawn "nm-applet"       -- Set Wifi tray icon
         spawn "blueman-applet"  -- Set BlueTooth tray icon
@@ -254,6 +254,7 @@ myStartupHook = do
         spawn "setxkbmap -layout us -option ctrl:nocaps"  -- Set capslock to ctrl
         spawn "nitrogen --restore &"
         spawn "compton &"
+        spawn "redshift -O 4500"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.

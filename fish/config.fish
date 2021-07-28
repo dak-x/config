@@ -13,5 +13,7 @@ setenv LESS_TERMCAP_us \e'[04;38;5;146m' # begin underline
 
 source /usr/share/autojump/autojump.fish
 
-# colored bat output
-setenv BAT_THEME "gruvbox"
+
+# Wasmer
+export WASMER_DIR="/home/dak-x/.wasmer"
+[ -s "$WASMER_DIR/wasmer.sh" ]; and source "$WASMER_DIR/wasmer.sh"
