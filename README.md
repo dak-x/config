@@ -1,7 +1,7 @@
 # Config
 Will update my gradually increasing configuration files.
 
-## Included :
+## Includes :
 1. alacritty
 2. userchrome(firefox css)
 3. custom_scripts
