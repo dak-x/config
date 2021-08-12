@@ -26,7 +26,7 @@
     "terminal.integrated.fontSize": 18,
     "terminal.integrated.fontFamily": "\"Source Code Pro\"",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right",
+    "workbench.sideBar.location": "left",
     "workbench.colorCustomizations": {
         // "editor.background": "#06191d",
         // "panel.background": "#06191d",
@@ -173,4 +173,8 @@
     "[dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "window.zoomLevel": 3,
 }

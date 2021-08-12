@@ -8,11 +8,13 @@ if test $1 -eq "1"; then
 	echo "Switching to only eDP screen, shutting down HDMI"
 	xrandr --output eDP --mode 1920x1080  --output HDMI-A-0 --off
     xmonad --restart
+	redshift -O 3500
 
 elif test $1 -eq "2"; then
 	echo "Switching to only HDMI screen, shutting down eDP"
 	xrandr --output eDP --off --output HDMI-A-0 --mode 1920x1080  --primary --right-of eDP
     xmonad --restart
+	redshift -O 4500
 
 elif test $1 -eq "3"; then
 	echo "Switching to both screens left-HDMI right-eDP"

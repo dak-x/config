@@ -254,7 +254,7 @@ myStartupHook = do
         spawn "setxkbmap -layout us -option ctrl:nocaps"  -- Set capslock to ctrl
         spawn "nitrogen --restore &"
         spawn "compton &"
-        spawn "redshift -O 4500"
+        spawn "redshift -O 3500"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
