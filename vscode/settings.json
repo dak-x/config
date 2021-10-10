@@ -125,8 +125,8 @@
         "comments": true,
         "strings": false
     },
+    "editor.renderWhitespace": "none",
     "editor.wordBasedSuggestionsMode": "allDocuments",
-    "rust-analyzer.procMacro.enable": true,
     "editor.snippetSuggestions": "bottom",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.acceptSuggestionOnEnter": "off",
@@ -134,8 +134,10 @@
     "editor.multiCursorModifier": "alt",
     //Rust
     "rust-analyzer.inlayHints.typeHints": false,
-    "rust-analyzer.cargo.runBuildScripts": true,
-    "editor.renderWhitespace": "none",
+    "rust-analyzer.procMacro.enable": true,
+    // "rust-analyzer.cargo.runBuildScripts": true,
+    "rust-analyzer.hoverActions.debug": false,
+    "rust-analyzer.checkOnSave.allFeatures": false,
     //GO
     "go.installDependenciesWhenBuilding": true,
     "go.formatTool": "default",
@@ -176,5 +178,5 @@
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
-    "window.zoomLevel": 3,
+    "jupyter.askForKernelRestart": false,
 }
