@@ -135,9 +135,7 @@
     //Rust
     "rust-analyzer.inlayHints.typeHints": false,
     "rust-analyzer.procMacro.enable": true,
-    // "rust-analyzer.cargo.runBuildScripts": true,
-    "rust-analyzer.hoverActions.debug": false,
-    "rust-analyzer.checkOnSave.allFeatures": false,
+    "rust-analyzer.checkOnSave.enable": false,
     //GO
     "go.installDependenciesWhenBuilding": true,
     "go.formatTool": "default",
@@ -166,7 +164,7 @@
     "tremor-query.trace.server": "messages",
     "tremor-script.trace.server": "messages",
     "tremor.languageServerExecutable": "~/.cargo/bin/tremor-language-server",
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Gruvbox Dark Soft",
     "redhat.telemetry.enabled": false,
     "notebook.cellToolbarLocation": {
         "default": "right",
