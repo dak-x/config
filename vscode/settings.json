@@ -177,4 +177,5 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "jupyter.askForKernelRestart": false,
+    "bracketPairColorizer.depreciation-notice": false,
 }
