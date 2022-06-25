@@ -31,9 +31,9 @@
         // "editor.background": "#06191d",
         // "panel.background": "#06191d",
         // "terminal.background": "#06191d",
-        "editor.background": "#010e13",
-        "panel.background": "#010e13",
-        "terminal.background": "#010e13",
+        // "editor.background": "#010e13",
+        // "panel.background": "#010e13",
+        // "terminal.background": "#010e13",
         
         "panel.border": "#91ff00ad",
         "editorCursor.foreground": "#ffd000f5",
@@ -132,8 +132,6 @@
     "editor.acceptSuggestionOnEnter": "off",
     "editor.suggest.showWords": false,
     "editor.multiCursorModifier": "alt",
-    //Rust
-    "rust-analyzer.inlayHints.typeHints": false,
     "rust-analyzer.procMacro.enable": true,
     "rust-analyzer.checkOnSave.enable": false,
     //GO
@@ -150,6 +148,7 @@
     },
     "C_Cpp.default.includePath": [
         "/usr/lib/gcc/x86_64-linux-gnu/7/include/",
+        "/usr/include/x86_64-linux-gnu/qt5/"
     ],
     "clang-format.executable": "/usr/bin/clang-format-10",
     "clang-format.language.cpp.style": "WebKit",
@@ -164,7 +163,7 @@
     "tremor-query.trace.server": "messages",
     "tremor-script.trace.server": "messages",
     "tremor.languageServerExecutable": "~/.cargo/bin/tremor-language-server",
-    "workbench.colorTheme": "Gruvbox Dark Soft",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "redhat.telemetry.enabled": false,
     "notebook.cellToolbarLocation": {
         "default": "right",
@@ -178,4 +177,6 @@
     },
     "jupyter.askForKernelRestart": false,
     "bracketPairColorizer.depreciation-notice": false,
+    "window.zoomLevel": 1,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
 }

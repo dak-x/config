@@ -43,7 +43,7 @@ myModMask       = mod4Mask
 
 -- > workspaces = ["web", "irc", "code" ] ++ map show [4..9]
 --
-myWorkspaces    = ["web","kod","irc","a","b","c"]
+myWorkspaces    = ["bow","kod","irc","a","b","c"]
 
 -- Border colors for unfocused and focused windows, respectively.
 --
@@ -64,7 +64,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_space ), setLayout $ XMonad.layoutHook conf)
     , ((modm,               xK_n     ), refresh)
 
-    -- , ((modm .|. shiftMask, xK_BackSpace), removeWorkspace)
+    , ((modm .|. shiftMask, xK_BackSpace), removeWorkspace)
 
     -- Move focus to the next window
     , ((modm,               xK_Tab   ), windows W.focusDown)
@@ -211,7 +211,8 @@ myManageHook = composeAll
     , className =? "Gimp"           --> doFloat
     , resource  =? "desktop_window" --> doIgnore
     , resource  =? "kdesktop"       --> doIgnore
-    , className  =? "Firefox"       --> doShift "web"
+    , className  =? "firefox"       --> doShift "bow"
+    , className =? "Firefox"      --> doShift "bow"
     , className  =? "Code"          --> doShift "kod"
     , className  =? "discord"       --> doShift "irc"
     , appName   =? "zoom"           --> doShift "c" <+> doFloat
@@ -254,7 +255,7 @@ myStartupHook = do
         spawn "setxkbmap -layout us -option ctrl:nocaps"  -- Set capslock to ctrl
         spawn "nitrogen --restore &"
         spawn "compton &"
-        spawn "redshift -O 3500"
+        spawn "redshift -O 4500"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
