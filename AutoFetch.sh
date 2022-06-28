@@ -1,17 +1,29 @@
 #!/usr/bin/fish
+
+# alacritty
 cp -r ~/.config/alacritty ./
+
+# userChrome.css
 cp -r ~/.mozilla/firefox/nnx6yqym.default-release/chrome ./
 
+# fish state
 cp -r ~/.config/fish ./
 
+# vs code settings and shortcuts
 cp ~/.config/Code/User/settings.json ./vscode/settings.json
 cp ~/.config/Code/User/keybindings.json ./vscode/keybindings.json
 
+# polybar
 cp -r ~/.config/polybar/material ./polybar/
 
+# xmonad wm
 cp ~/.xmonad/xmonad.hs ./
 
+# scripts
 cp /usr/local/bin/*.sh ./customscripts/
+cp /usr/local/bin/dyWall.py ./customscripts/
+
+
 
 echo "Last updated :" (date) > msg.txt
 
