@@ -8,4 +8,5 @@ Will update my gradually increasing configuration files.
 4. fish
 5. polybar [Acknowledgement: https://github.com/ngynLk/polybar-themes]
 6. vscode
-7. xMonad
+7. bspwm
+8. dynamic-wallpaper

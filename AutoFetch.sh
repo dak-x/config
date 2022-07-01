@@ -16,8 +16,9 @@ cp ~/.config/Code/User/keybindings.json ./vscode/keybindings.json
 # polybar
 cp -r ~/.config/polybar/material ./polybar/
 
-# xmonad wm
-cp ~/.xmonad/xmonad.hs ./
+# bspwm <3
+cp -r ~/.config/bspwm/ ./bspwm
+cp -r ~/.config/sxhkd/ ./sxhkd
 
 # scripts
 cp /usr/local/bin/*.sh ./customscripts/

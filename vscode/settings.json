@@ -178,5 +178,5 @@
     "jupyter.askForKernelRestart": false,
     "bracketPairColorizer.depreciation-notice": false,
     "rust-analyzer.inlayHints.typeHints.enable": false,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
 }
